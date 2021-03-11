@@ -49,16 +49,33 @@ header {
     transition: height 0.5s ease;
 
     nav ul li {
-      padding: 25px 0;
+      padding: 20px 0;
       opacity: 0;
       transition: opacity 0.5s ease;
+      list-style: none;
+
+      &:nth-of-type(4) {
+        padding-bottom: 50px;
+      }
+    }
+
+    .turnOn {
+      display: inline-block;
+      margin-top: 50px;
+      width: 170px;
+      padding: 15px 0;
+      border-radius: 8px;
+      margin: auto;
+      color: #000;
+      background: linear-gradient(180deg, #b485ff 0%, #b485ff 100%);
+      // box-shadow: 0 0 10px #b485ff, 0 0 40px #b485ff, 0 0 80px #b485ff;
     }
   }
 }
 
 header {
   .header__menu--open {
-    height: 100vh;
+    height: calc(100vh - 80px);
 
     nav ul li {
       opacity: 1;
