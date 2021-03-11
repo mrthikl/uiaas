@@ -44,14 +44,14 @@ header {
     overflow: hidden;
     position: absolute;
     left: 0;
-    top: 80px;
+    top: 0;
     background: #000;
     transition: height 0.5s ease;
+    z-index: -1;
 
     nav ul li {
       padding: 20px 0;
       opacity: 0;
-      transition: opacity 0.5s ease;
       list-style: none;
 
       &:nth-of-type(4) {
@@ -75,10 +75,11 @@ header {
 
 header {
   .header__menu--open {
-    height: calc(100vh - 80px);
+    height: 100vh;
 
     nav ul li {
       opacity: 1;
+      transition: opacity 0.5s ease;
       transition-delay: 0.5s;
     }
   }
