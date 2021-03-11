@@ -1,0 +1,24 @@
+.project {
+  width: 100%;
+  padding: 0 40px;
+  flex-direction: column;
+
+  .font__style--project {
+    max-width: 300px;
+  }
+
+  .project__content {
+    margin-bottom: 60px;
+    img {
+      width: 100%;
+    }
+
+    .font__style--headline {
+      line-height: 15px;
+      margin-top: 15px;
+    }
+    .font__style--content02 {
+      color: var(--colorGray);
+    }
+  }
+}
