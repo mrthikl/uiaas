@@ -22,7 +22,7 @@ body {
 
 body {
   font-family: "Arimo";
-  background: #000;
+  background: var(--darklighter);
 }
 
 section {
@@ -34,4 +34,5 @@ section {
   --colorGrayLight: #a3a3a3;
   --bgYellowLight: #f5f2e1;
   --colorPurple: #bb6bd9;
+  --darklighter: #1f1f1f;
 }
