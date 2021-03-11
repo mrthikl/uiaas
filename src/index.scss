@@ -5,6 +5,7 @@
 @import "./style/content.scss";
 @import "./style/style.scss";
 @import "./style/project.scss";
+@import "./style/pricing.scss";
 
 * {
   box-sizing: border-box;
@@ -23,4 +24,7 @@ body {
 
 :root {
   --colorGray: #a1a0a3;
+  --colorGrayLight: #a3a3a3;
+  --bgYellowLight: #f5f2e1;
+  --colorPurple: #bb6bd9;
 }

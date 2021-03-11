@@ -6,6 +6,7 @@ header {
   justify-content: space-between !important;
   position: relative;
   position: fixed;
+  z-index: 10;
 
   .header__logo {
     width: 70px;
