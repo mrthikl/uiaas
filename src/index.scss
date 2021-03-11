@@ -6,6 +6,9 @@
 @import "./style/style.scss";
 @import "./style/project.scss";
 @import "./style/pricing.scss";
+@import "./style/features.scss";
+@import "./style/FAQ.scss";
+@import "./style/contact.scss";
 
 * {
   box-sizing: border-box;
@@ -20,6 +23,10 @@ body {
 body {
   font-family: "Arimo";
   background: #000;
+}
+
+section {
+  padding: 0 40px;
 }
 
 :root {

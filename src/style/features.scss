@@ -1,0 +1,38 @@
+.features {
+  width: 100%;
+  padding: 40px 0;
+  color: #000;
+  text-align: center;
+  background: var(--bgYellowLight);
+
+  .font__style--project,
+  .font__style--content02,
+  .font__style--headline {
+    color: inherit;
+  }
+
+  .features--title {
+    justify-content: space-between !important;
+    padding: 0 40px;
+    margin-top: 80px;
+    p {
+      font-weight: 700;
+    }
+  }
+
+  .features__content {
+    .features__content--item {
+      .content--box {
+        padding: 16px 40px;
+        background: #fff;
+        width: 100%;
+        text-align: left;
+      }
+
+      .content--review {
+        padding: 20px 40px;
+        justify-content: space-between !important;
+      }
+    }
+  }
+}

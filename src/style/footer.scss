@@ -1,0 +1,13 @@
+footer {
+  padding: 0 40px;
+  flex-direction: column;
+  text-align: center;
+
+  .font__style--content02 {
+    margin: 0;
+    margin-bottom: 15px;
+    span {
+      color: #a1a0a3;
+    }
+  }
+}
