@@ -1,0 +1,25 @@
+.content {
+  width: 100%;
+  padding: 0 40px;
+  flex-direction: column;
+
+  .font__style--content {
+    margin-bottom: 80px;
+  }
+
+  .content__project {
+    margin-bottom: 80px;
+    img {
+      margin-bottom: 25px;
+    }
+
+    .font__style--headline {
+      margin-top: 0;
+      margin-bottom: -10px;
+    }
+
+    .font__style--content02 {
+      color: var(--colorGray);
+    }
+  }
+}
