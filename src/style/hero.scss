@@ -2,9 +2,15 @@
   width: 100%;
   height: 80vh;
   justify-content: flex-start !important;
-  align-items: flex-end !important;
+  align-items: center !important;
 
   .font__style--hero {
     max-width: 500px;
+  }
+
+  @media (min-width: 1024px) {
+    .font__style--hero {
+      max-width: 800px;
+    }
   }
 }

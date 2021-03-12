@@ -20,4 +20,39 @@
       color: var(--colorGray);
     }
   }
+
+  @media (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+    .project__content--headline {
+      width: 100%;
+      .font__style--project {
+        max-width: 400px;
+      }
+    }
+
+    .project__box {
+      width: 50%;
+
+      &:nth-of-type(3) {
+        padding-top: 100px;
+      }
+      .project__content {
+        text-align: center;
+
+        p {
+          width: 80%;
+          margin: auto;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .project__content--headline .font__style--project {
+      max-width: 800px;
+    }
+  }
 }

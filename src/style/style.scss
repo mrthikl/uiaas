@@ -46,3 +46,33 @@
   align-items: center;
   justify-content: center;
 }
+
+@media (min-width: 375px) {
+  .font__style--content02 {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .font__style--headline {
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .font__style--hero {
+    font-size: 80px;
+    line-height: 96px;
+    font-weight: 600;
+  }
+
+  .font__style--content {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .font__style--project {
+    font-size: 64px;
+    line-height: 76px;
+  }
+}

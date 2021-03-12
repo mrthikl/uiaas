@@ -1,6 +1,8 @@
 .FAQ {
   width: 100%;
   padding: 80px 20px;
+  max-width: 740px;
+  margin: auto;
 
   .FAQ__content--headline {
     margin-bottom: 80px;
@@ -73,6 +75,18 @@
 
       img {
         transform: rotate(90deg);
+      }
+    }
+  }
+
+  @media (min-width: 768px) {
+    .FAQ__content--box {
+      &:nth-of-type(2) .content--title {
+        max-height: 65px;
+      }
+
+      .content--title {
+        max-height: 65px;
       }
     }
   }

@@ -27,6 +27,21 @@ body {
 
 section {
   padding: 0 20px;
+
+  @media (min-width: 375px) {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  @media (min-width: 1024px) {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+
+  @media (min-width: 1440px) {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
 }
 
 :root {
