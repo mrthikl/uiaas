@@ -46,6 +46,14 @@ section {
   }
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
 :root {
   --colorGray: #a1a0a3;
   --colorGrayLight: #a3a3a3;
