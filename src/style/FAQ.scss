@@ -90,4 +90,21 @@
       }
     }
   }
+
+  @media (min-width: 1024px) {
+    .FAQ__content--headline {
+      .font__style--headline {
+        font-size: 64px;
+        line-height: 76px;
+      }
+
+      .font__style--content02 {
+        font-size: 24px;
+        line-height: 36px;
+        max-width: 500px;
+        margin: auto;
+        margin-top: 20px;
+      }
+    }
+  }
 }

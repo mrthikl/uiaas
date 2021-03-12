@@ -1,29 +1,50 @@
 .features {
   width: 100%;
+  max-width: unset !important;
   padding: 40px 0;
+  padding-bottom: 80px;
   color: #000;
   text-align: center;
   background: var(--bgYellowLight);
+
+  .features--inner {
+    max-width: 1200px;
+    margin: auto;
+  }
 
   .font__style--project,
   .font__style--content02,
   .font__style--headline {
     color: inherit;
+    font-weight: 700;
   }
 
   .features--title {
     justify-content: space-between !important;
-    padding: 0 40px;
+    padding: 0 20px;
     margin-top: 80px;
-    p {
-      font-weight: 700;
+
+    .title01 {
+      display: none;
+    }
+
+    .title02 {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      img {
+        width: 70px;
+        height: 32px;
+      }
     }
   }
 
   .features__content {
     .features__content--item {
       .content--box {
-        padding: 16px 40px;
+        padding: 16px 20px;
         background: #fff;
         width: 100%;
         text-align: left;
@@ -32,6 +53,64 @@
       .content--review {
         padding: 20px 40px;
         justify-content: space-between !important;
+      }
+    }
+  }
+
+  @media (min-width: 375px) {
+    .features--title {
+      padding: 0 40px;
+    }
+
+    .features__content .features__content--item {
+      .content--box {
+        padding: 16px 40px;
+      }
+      .content--review {
+        padding: 20px 40px;
+      }
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .font__style--project {
+      padding-left: 40px;
+      text-align: left;
+    }
+
+    .features--title {
+      display: flex;
+
+      .font__style--content02 {
+        font-size: 24px;
+        line-height: 36px;
+      }
+
+      .title01 {
+        width: 100%;
+        text-align: left;
+        display: block;
+      }
+    }
+
+    .features__content {
+      .features__content--item {
+        display: flex;
+
+        .content--review {
+          padding-left: 40px;
+          padding-right: 90px;
+          width: 100%;
+          background: #fff;
+        }
+
+        &:nth-of-type(2),
+        &:nth-of-type(4) {
+          .content--box,
+          .content--review {
+            background: var(--bgYellowLight);
+          }
+        }
       }
     }
   }

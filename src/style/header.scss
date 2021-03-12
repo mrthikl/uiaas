@@ -83,3 +83,21 @@ header {
     }
   }
 }
+
+@media (min-width: 768px) {
+  header {
+    padding: 0 40px;
+  }
+}
+
+@media (min-width: 1024px) {
+  header {
+    padding: 0 80px;
+  }
+}
+
+@media (min-width: 1400px) {
+  header {
+    padding: 0 120px;
+  }
+}
