@@ -28,6 +28,14 @@
       }
     }
 
+    &:nth-of-type(3) {
+      .content--title {
+        @media (min-width: 375px) {
+          max-height: 65px;
+        }
+      }
+    }
+
     .content--title {
       flex-direction: column;
       align-items: flex-start !important;
