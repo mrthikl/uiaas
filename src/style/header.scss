@@ -7,6 +7,7 @@ header {
   position: relative;
   position: fixed;
   z-index: 10;
+  transition: top 0.5s ease;
 
   .header__logo {
     width: 70px;
