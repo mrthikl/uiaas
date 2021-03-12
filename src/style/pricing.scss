@@ -35,6 +35,13 @@
     border-radius: 8px;
     position: relative;
     overflow: hidden;
+    transition: 0.5s ease;
+    transition-property: box-shadow, transform;
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 30px 65px rgb(188, 109, 217 , 0.3);
+    }
 
     .box__headline {
       margin-bottom: 50px;
