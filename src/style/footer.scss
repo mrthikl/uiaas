@@ -17,6 +17,7 @@ footer {
 
   .social {
     svg {
+      cursor: pointer;
       margin: 0 20px;
       path {
         transition: 0.5s ease;
@@ -26,6 +27,17 @@ footer {
           fill: var(--colorPurple);
         }
       }
+    }
+  }
+
+  @media (min-width: 1440px) {
+    width: 100%;
+    padding: 80px 120px;
+    flex-direction: row;
+    justify-content: space-between !important;
+
+    p {
+      margin: 0 !important;
     }
   }
 }
