@@ -45,7 +45,7 @@ header {
     position: absolute;
     left: 0;
     top: 0;
-    background: #000;
+    background: var(--darklighter);
     transition: height 0.8s ease;
     z-index: -1;
 
