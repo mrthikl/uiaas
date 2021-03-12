@@ -64,4 +64,28 @@
       background: #b485ff;
     }
   }
+
+  @media (min-width: 1024px) {
+    margin-top: 50px;
+    display: flex;
+
+    .contact__content--headline {
+      margin-top: -125px;
+    }
+
+    form {
+      width: 68%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      .formfield {
+        width: 48%;
+
+        &:last-of-type {
+          width: 100%;
+        }
+      }
+    }
+  }
 }
