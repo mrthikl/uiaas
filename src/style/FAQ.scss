@@ -22,12 +22,6 @@
       display: none;
     }
 
-    &:nth-of-type(2) {
-      .content--title {
-        max-height: 130px;
-      }
-    }
-
     &:nth-of-type(3) {
       .content--title {
         @media (min-width: 375px) {
@@ -83,6 +77,14 @@
 
       img {
         transform: rotate(90deg);
+      }
+    }
+  }
+
+  @media (min-width: 425px) {
+    .FAQ__content--box {
+      &:nth-of-type(6) .content--title {
+        max-height: 65px;
       }
     }
   }
