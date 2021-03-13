@@ -47,6 +47,23 @@
   justify-content: center;
 }
 
+[data-aos="project__effect--img"] {
+  transition-property: transform, opacity, background, color;
+  transition: 0.3s ease !important;
+
+  img {
+    overflow: hidden;
+    transform: scale(1.25);
+    transition: transform 1s ease;
+  }
+
+  &.aos-animate {
+    img {
+      transform: scale(1);
+    }
+  }
+}
+
 [data-aos="project--effect"] {
   background: #1f1f1f;
   color: #fff;
