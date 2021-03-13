@@ -3,8 +3,7 @@
   max-width: unset !important;
   padding: 100px 20px;
   padding-bottom: 30px;
-  background: var(--bgYellowLight);
-  color: #000;
+  // background: var(--bgYellowLight);
 
   .font__style--project,
   .font__style--content02,
@@ -40,7 +39,7 @@
 
     &:hover {
       transform: translateY(-5px);
-      box-shadow: 0 30px 65px rgb(188, 109, 217 , 0.3);
+      box-shadow: 0 30px 65px rgb(188, 109, 217, 0.3);
     }
 
     .box__headline {

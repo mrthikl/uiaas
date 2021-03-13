@@ -1,6 +1,13 @@
 .project {
   width: 100%;
+  max-width: unset;
   flex-direction: column;
+
+  .project--inner {
+    width: 100%;
+    max-width: 1440px;
+    margin: auto;
+  }
 
   .font__style--project {
     max-width: 300px;
@@ -15,6 +22,7 @@
     .font__style--headline {
       line-height: 15px;
       margin-top: 15px;
+      color: inherit;
     }
     .font__style--content02 {
       color: var(--colorGray);
@@ -22,9 +30,11 @@
   }
 
   @media (min-width: 768px) {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+    .project--inner {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+    }
 
     .project__content--headline {
       width: 100%;
