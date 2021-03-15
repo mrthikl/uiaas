@@ -76,6 +76,17 @@
   }
 }
 
+[data-aos="project--effect--text"] {
+  margin-top: 100px;
+  display: inline-block;
+  transition-property: margin-top;
+  transition: 1s ease !important;
+
+  &.aos-animate {
+    margin-top: 0;
+  }
+}
+
 [data-aos="pricing--effect"] {
   background: #1f1f1f;
   color: #fff;

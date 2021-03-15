@@ -32,7 +32,9 @@
     .font__style--headline {
       line-height: 15px;
       margin-top: 15px;
+      height: 45px;
       color: inherit;
+      overflow: hidden;
     }
     .font__style--content02 {
       color: var(--colorGray);
