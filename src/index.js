@@ -26,6 +26,7 @@ jQuery(document).ready(function ($) {
 // Open menu Mobile
 headerButtonMenu.addEventListener("click", () => {
   menuContent.classList.toggle("header__menu--open");
+  headerButtonMenu.classList.toggle("hamburger");
 });
 
 // aos js

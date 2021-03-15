@@ -20,13 +20,16 @@ header {
     padding: 10px;
     margin: -10px;
     margin-top: -15px;
+    position: relative;
 
     .button--inner {
       width: 100%;
       height: 1px;
       background: #fff;
       position: relative;
+      transform: scale(1);
       cursor: pointer;
+      transition: transform 0.5s ease;
 
       &::before,
       &::after {
@@ -44,6 +47,25 @@ header {
       &::after {
         bottom: -5px;
       }
+    }
+
+    .button--open {
+      width: 18px;
+      position: absolute;
+      top: 3px;
+      left: 11px;
+      transform: scale(0);
+      transition: transform 0.5s ease;
+    }
+  }
+
+  .hamburger {
+    .button--inner {
+      transform: scale(0);
+    }
+
+    .button--open {
+      transform: scale(1);
     }
   }
 
