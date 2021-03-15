@@ -78,4 +78,5 @@ featuresButton.addEventListener("click", removeOpenMenu);
 
 function removeOpenMenu() {
   menuContent.classList.remove("header__menu--open");
+  headerButtonMenu.classList.remove("hamburger");
 }
