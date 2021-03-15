@@ -196,6 +196,12 @@
     }
   }
 
+  @media (min-width: 1280px) {
+    .pricing__content .pricing__content--box {
+      min-width: 365px;
+    }
+  }
+
   @media (min-width: 1440px) {
     .pricing__content .pricing__content--box {
       width: 100%;
