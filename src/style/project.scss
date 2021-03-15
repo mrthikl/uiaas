@@ -1,5 +1,6 @@
 .project {
   width: 100%;
+  padding-bottom: 50px;
   max-width: unset;
   flex-direction: column;
 
@@ -73,6 +74,7 @@
   }
 
   @media (min-width: 1024px) {
+    padding-bottom: 0;
     .project__content--headline .font__style--project {
       max-width: 800px;
     }
