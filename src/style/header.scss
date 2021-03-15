@@ -89,6 +89,33 @@ header {
       &:nth-of-type(4) {
         padding-bottom: 50px;
       }
+
+      span {
+        position: relative;
+        &::before,
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: -5px;
+          width: 0;
+          height: 1px;
+          background: var(--colorPurple);
+          transition: width 0.5s ease;
+        }
+
+        &::before {
+          left: 50%;
+        }
+
+        &::after {
+          right: 50%;
+        }
+      }
+
+      &:hover span::before,
+      &:hover span::after {
+        width: 50%;
+      }
     }
 
     .turnOn {
