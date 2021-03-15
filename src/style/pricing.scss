@@ -119,10 +119,18 @@
       font-size: 12px;
       padding: 16px 0;
       border-radius: 8px;
+      cursor: pointer;
       text-align: center;
       display: inline-block;
       color: var(--colorPurple);
       border: 2px solid var(--colorPurple);
+      transition: 0.5s ease;
+      transition-property: color, background;
+
+      &:hover {
+        color: #000;
+        background: var(--colorPurple);
+      }
     }
   }
 
@@ -149,6 +157,11 @@
     .box__button {
       color: #000;
       background: var(--colorPurple);
+
+      &:hover {
+        color: var(--colorPurple);
+        background: #fff;
+      }
     }
   }
 
