@@ -189,6 +189,7 @@ header {
   header {
     width: 90%;
     left: calc(50% - 90% / 2);
+    border-radius: 8px;
 
     .header__button--menu {
       display: none;
