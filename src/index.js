@@ -5,6 +5,7 @@ const projectButton = document.getElementById("projectButton");
 const pricingButton = document.getElementById("pricingButton");
 const FAQButton = document.getElementById("FAQButton");
 const featuresButton = document.getElementById("featuresButton");
+const mediaMin1024 = window.matchMedia("(min-width: 1024px)");
 
 // Scroll Header
 var lastScroll = 0;
@@ -16,7 +17,11 @@ jQuery(document).ready(function ($) {
       if (scroll > lastScroll + 10) {
         $("#header").css({ top: "-90px" });
       } else if (scroll < lastScroll - 10) {
-        $("#header").css({ top: "10px" });
+        if (mediaMin1024.matches) {
+          $("#header").css({ top: "10px" });
+        } else {
+          $("#header").css({ top: "0" });
+        }
       }
       lastScroll = scroll;
     });
