@@ -14,9 +14,9 @@ jQuery(document).ready(function ($) {
     setTimeout(function () {
       var scroll = $(window).scrollTop();
       if (scroll > lastScroll + 10) {
-        $("#header").css({ top: "-80px" });
+        $("#header").css({ top: "-90px" });
       } else if (scroll < lastScroll - 10) {
-        $("#header").css({ top: "0" });
+        $("#header").css({ top: "10px" });
       }
       lastScroll = scroll;
     });
