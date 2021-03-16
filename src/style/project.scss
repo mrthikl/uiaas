@@ -16,6 +16,16 @@
     max-width: 300px;
   }
 
+  .viewMore {
+    a {
+      cursor: pointer;
+      color: var(--colorPurple) !important;
+      img {
+        margin-bottom: -10px;
+      }
+    }
+  }
+
   .project__content {
     margin-bottom: 60px;
     img {
