@@ -10,6 +10,7 @@ const mediaMin1024 = window.matchMedia("(min-width: 1024px)");
 
 // Scroll Header
 var lastScroll = 0;
+let openHeader = true;
 
 jQuery(document).ready(function ($) {
   $(window).scroll(function () {
@@ -33,6 +34,7 @@ jQuery(document).ready(function ($) {
 headerButtonMenu.addEventListener("click", () => {
   menuContent.classList.toggle("header__menu--open");
   headerButtonMenu.classList.toggle("hamburger");
+  header.classList.toggle("topHeader");
 });
 
 // aos js
@@ -93,4 +95,5 @@ featuresButton.addEventListener("click", removeOpenMenu);
 function removeOpenMenu() {
   menuContent.classList.remove("header__menu--open");
   headerButtonMenu.classList.remove("hamburger");
+  header.classList.remove("topHeader");
 }
