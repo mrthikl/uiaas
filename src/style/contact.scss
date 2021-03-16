@@ -1,7 +1,15 @@
 .contact {
   color: #fff;
+  width: 100%;
+  max-width: unset;
   padding-bottom: 70px;
   border-bottom: 1px solid #292929;
+  position: relative;
+
+  .contact--inner {
+    max-width: 1440px;
+    margin: auto;
+  }
 
   .font__style--project,
   .font__style--content02,
@@ -12,6 +20,15 @@
   .contact__content--headline {
     .font__style--headline {
       margin-bottom: -5px;
+    }
+
+    .left {
+      display: none;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      max-width: 220px;
     }
   }
 
@@ -79,10 +96,18 @@
 
   @media (min-width: 1024px) {
     margin-top: 50px;
-    display: flex;
+
+    .contact--inner {
+      display: flex;
+      justify-content: center;
+    }
 
     .contact__content--headline {
       margin-top: -125px;
+
+      .left {
+        display: block;
+      }
     }
 
     form {
