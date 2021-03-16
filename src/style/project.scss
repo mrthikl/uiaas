@@ -3,6 +3,8 @@
   padding-bottom: 50px;
   max-width: unset;
   flex-direction: column;
+  background: url("../img/site_images/BG2.png") top center/contain no-repeat;
+  background-position-y: 100px;
 
   .project--inner {
     width: 100%;
@@ -43,6 +45,9 @@
   }
 
   @media (min-width: 768px) {
+    background: url("../img/site_images/BG2.png") top center/contain no-repeat;
+    background-position-y: 200px;
+
     .project--inner {
       display: flex;
       flex-wrap: wrap;

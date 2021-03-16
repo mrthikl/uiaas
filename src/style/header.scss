@@ -128,7 +128,34 @@ header {
       margin: auto;
       color: #000;
       background: linear-gradient(180deg, #b485ff 0%, #b485ff 100%);
-      // box-shadow: 0 0 10px #b485ff, 0 0 40px #b485ff, 0 0 80px #b485ff;
+      overflow: hidden;
+      position: relative;
+
+      span {
+        position: relative;
+        z-index: 1;
+        &::before,
+        &::after {
+          display: none;
+        }
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        height: 0;
+        z-index: 0;
+        background: #fff;
+        transform: translate(-50%, -50%) rotate(45deg);
+        transition: height 0.5s ease;
+      }
+
+      &:hover::before {
+        height: 380%;
+      }
     }
   }
 }

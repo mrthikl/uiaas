@@ -1,8 +1,13 @@
 .FAQ {
   width: 100%;
   padding: 80px 20px;
-  max-width: 740px;
-  margin: auto;
+
+  background: url("../img/site_images/BG3.png") center/contain no-repeat;
+
+  .FAQ--inner {
+    max-width: 740px;
+    margin: auto;
+  }
 
   .FAQ__content--headline {
     margin-bottom: 80px;
