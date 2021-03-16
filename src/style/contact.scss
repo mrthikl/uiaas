@@ -42,7 +42,6 @@
         outline: none;
         transition: border 0.3s ease;
         font-family: "Arimo";
-        -webkit-appearance: none;
 
         &:valid,
         &:focus {
@@ -55,6 +54,14 @@
         resize: none;
         min-height: 150px;
         border: 1px solid #525252;
+      }
+
+      textarea,
+      input[type="text"],
+      input[type="button"],
+      input[type="submit"] {
+        -webkit-appearance: none;
+        border-radius: 0;
       }
     }
 
