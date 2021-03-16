@@ -127,9 +127,16 @@ header {
       border-radius: 8px;
       margin: auto;
       color: #000;
+      background: #fff;
       background: linear-gradient(180deg, #b485ff 0%, #b485ff 100%);
       overflow: hidden;
       position: relative;
+
+      p {
+        position: relative;
+        z-index: 1;
+        margin: 0;
+      }
 
       span {
         position: relative;
