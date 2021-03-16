@@ -6,6 +6,12 @@
 
   .font__style--hero {
     max-width: 500px;
+
+    span {
+      overflow: hidden;
+      max-height: 100px;
+      display: inline-flex;
+    }
   }
 
   @media (min-width: 1024px) {

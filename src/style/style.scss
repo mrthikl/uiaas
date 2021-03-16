@@ -47,6 +47,26 @@
   justify-content: center;
 }
 
+[data-aos="hero__effect--text"] {
+  transition-property: transform, opacity, background, color;
+  transition: 0.3s ease !important;
+
+  span {
+    span {
+      transform: translateY(100px);
+      transition: transform 2s ease;
+    }
+  }
+
+  &.aos-animate {
+    span {
+      span {
+        transform: translateY(0);
+      }
+    }
+  }
+}
+
 [data-aos="project__effect--img"] {
   @media (min-width: 768px) {
     transition-property: transform, opacity, background, color;
