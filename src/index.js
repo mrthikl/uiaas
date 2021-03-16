@@ -5,6 +5,7 @@ const projectButton = document.getElementById("projectButton");
 const pricingButton = document.getElementById("pricingButton");
 const FAQButton = document.getElementById("FAQButton");
 const featuresButton = document.getElementById("featuresButton");
+const scrollButton = document.querySelector("scroll");
 const mediaMin1024 = window.matchMedia("(min-width: 1024px)");
 
 // Scroll Header
@@ -71,6 +72,14 @@ $("#featuresButton").click(function () {
   $("html, body").animate(
     {
       scrollTop: $("#features").offset().top,
+    },
+    1000
+  );
+});
+$(".scroll").click(function () {
+  $("html, body").animate(
+    {
+      scrollTop: $(".content__project").offset().top,
     },
     1000
   );
