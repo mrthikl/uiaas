@@ -5,7 +5,10 @@
   padding-bottom: 30px;
   padding-top: 50px;
   position: relative;
-  // background: var(--bgYellowLight);
+  background: var(--bgYellowLight);
+  transition: 0.3s ease;
+  transition-property: background, color;
+  // background: var(--darklighter);
 
   .background--pricing {
     position: absolute;

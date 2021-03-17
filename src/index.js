@@ -8,6 +8,35 @@ const featuresButton = document.getElementById("featuresButton");
 const scrollButton = document.querySelector("scroll");
 const mediaMin1024 = window.matchMedia("(min-width: 1024px)");
 
+//observer API header
+const sectionOne = document.querySelector(".pricing");
+const project = document.querySelector(".project");
+const sectionOneOptions = {
+  rootMargin: "0px 0px -50% 0px",
+  threshhold: 1,
+};
+
+const sectionOneObserver = new IntersectionObserver(function (
+  entries,
+  sectionOneObserver
+) {
+  entries.forEach((entry) => {
+    if (!entry.isIntersecting) {
+      sectionOne.classList.add("background--dark");
+      project.classList.add("background--dark");
+      sectionOne.classList.remove("background--yellow");
+      project.classList.remove("background--yellow");
+    } else {
+      sectionOne.classList.remove("background--dark");
+      project.classList.remove("background--dark");
+      sectionOne.classList.add("background--yellow");
+      project.classList.add("background--yellow");
+    }
+  });
+},
+sectionOneOptions);
+sectionOneObserver.observe(sectionOne);
+
 // Scroll Header
 var lastScroll = 0;
 let openHeader = true;
