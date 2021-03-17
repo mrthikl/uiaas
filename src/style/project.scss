@@ -39,10 +39,10 @@
 
       img {
         width: 100%;
+        transition: transform 1s ease;
 
         &:hover {
           transform: scale(1.2) !important;
-          transition: transform 1s ease;
         }
       }
     }
