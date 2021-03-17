@@ -136,14 +136,14 @@
       cursor: pointer;
       text-align: center;
       display: inline-block;
-      color: var(--colorPurple);
-      border: 2px solid var(--colorPurple);
+      color: #b485ff;
+      border: 2px solid #b485ff;
       transition: 0.5s ease;
       transition-property: color, background;
 
       &:hover {
         color: #000;
-        background: var(--colorPurple);
+        background: #b485ff;
       }
 
       @media (min-width: 375px) {
@@ -174,10 +174,10 @@
 
     .box__button {
       color: #000;
-      background: var(--colorPurple);
+      background: #b485ff;
 
       &:hover {
-        color: var(--colorPurple);
+        color: #b485ff;
         background: #fff;
       }
     }
