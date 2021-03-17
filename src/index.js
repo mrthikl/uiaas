@@ -12,7 +12,7 @@ const mediaMin1024 = window.matchMedia("(min-width: 1024px)");
 const sectionOne = document.querySelector(".pricing");
 const project = document.querySelector(".project");
 const sectionOneOptions = {
-  rootMargin: "0px 0px -50% 0px",
+  rootMargin: "50% 0px -50% 0px",
   threshhold: 1,
 };
 
