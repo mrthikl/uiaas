@@ -4,7 +4,17 @@
   padding: 100px 20px;
   padding-bottom: 30px;
   padding-top: 50px;
+  position: relative;
   // background: var(--bgYellowLight);
+
+  .background--pricing {
+    position: absolute;
+    left: 0;
+    top: -200vh;
+    width: 100%;
+    height: 200vh;
+    z-index: -1;
+  }
 
   .font__style--project,
   .font__style--content02,
