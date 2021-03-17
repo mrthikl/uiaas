@@ -2,6 +2,19 @@
   width: 100%;
   max-width: unset;
   padding: 80px 20px;
+  overflow: hidden;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../img/site_images/BG3.png") top / contain no-repeat;
+    pointer-events: none;
+  }
 
   .FAQ--inner {
     max-width: 740px;
