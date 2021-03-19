@@ -7,6 +7,7 @@
   background-position-y: 100px;
   transition: 0.7s ease;
   transition-property: background;
+  position: relative;
 
   .project--inner {
     width: 100%;
@@ -16,15 +17,37 @@
 
   .font__style--project {
     max-width: 300px;
-    color: inherit;
+    color: #fff;
   }
 
   .viewMore {
+    font-size: 16px;
     a {
       cursor: pointer;
       color: #b485ff !important;
       img {
-        margin-bottom: -10px;
+        width: 16px;
+        margin-bottom: -3px;
+      }
+    }
+
+    @media (min-width: 768px) {
+      font-size: 22px;
+
+      a img {
+        width: 30px;
+        margin-bottom: -5px;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      font-size: 24px;
+      position: absolute;
+      bottom: 100px;
+
+      a img {
+        width: auto;
+        margin-bottom: -8px;
       }
     }
   }
@@ -49,11 +72,11 @@
     }
 
     .font__style--headline {
-      line-height: 15px;
+      line-height: 25px;
       margin-top: 15px;
       padding-top: 25px;
       height: 75px;
-      color: inherit;
+      color: #fff;
       overflow: hidden;
     }
     .font__style--content02 {
@@ -97,7 +120,7 @@
   }
 
   @media (min-width: 1024px) {
-    padding-bottom: 0;
+    padding-bottom: 100px;
     .project__content--headline .font__style--project {
       max-width: 800px;
     }

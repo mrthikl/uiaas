@@ -9,55 +9,55 @@ const scrollButton = document.querySelector("scroll");
 const mediaMin1024 = window.matchMedia("(min-width: 1024px)");
 
 //observer API header
-const sectionOne = document.querySelector(".pricing");
-const project = document.querySelector(".project");
-const sectionOneOptions = {
-  rootMargin: "50% 0px -50% 0px",
-  threshhold: 1,
-};
+// const sectionOne = document.querySelector(".pricing");
+// const project = document.querySelector(".project");
+// const sectionOneOptions = {
+//   rootMargin: "50% 0px -50% 0px",
+//   threshhold: 1,
+// };
 
-const sectionOneObserver = new IntersectionObserver(function (
-  entries,
-  sectionOneObserver
-) {
-  entries.forEach((entry) => {
-    if (!entry.isIntersecting) {
-      sectionOne.classList.add("background--dark");
-      project.classList.add("background--dark");
-      sectionOne.classList.remove("background--yellow");
-      project.classList.remove("background--yellow");
-    } else {
-      sectionOne.classList.remove("background--dark");
-      project.classList.remove("background--dark");
-      sectionOne.classList.add("background--yellow");
-      project.classList.add("background--yellow");
-    }
-  });
-},
-sectionOneOptions);
-sectionOneObserver.observe(sectionOne);
+// const sectionOneObserver = new IntersectionObserver(function (
+//   entries,
+//   sectionOneObserver
+// ) {
+//   entries.forEach((entry) => {
+//     if (!entry.isIntersecting) {
+//       sectionOne.classList.add("background--dark");
+//       project.classList.add("background--dark");
+//       sectionOne.classList.remove("background--yellow");
+//       project.classList.remove("background--yellow");
+//     } else {
+//       sectionOne.classList.remove("background--dark");
+//       project.classList.remove("background--dark");
+//       sectionOne.classList.add("background--yellow");
+//       project.classList.add("background--yellow");
+//     }
+//   });
+// },
+// sectionOneOptions);
+// sectionOneObserver.observe(sectionOne);
 
 // Scroll Header
-var lastScroll = 0;
-let openHeader = true;
+// var lastScroll = 0;
+// let openHeader = true;
 
-jQuery(document).ready(function ($) {
-  $(window).scroll(function () {
-    setTimeout(function () {
-      var scroll = $(window).scrollTop();
-      if (scroll > lastScroll + 10) {
-        $("#header").css({ top: "-90px" });
-      } else if (scroll < lastScroll - 10) {
-        if (mediaMin1024.matches) {
-          $("#header").css({ top: "10px" });
-        } else {
-          $("#header").css({ top: "0" });
-        }
-      }
-      lastScroll = scroll;
-    });
-  });
-});
+// jQuery(document).ready(function ($) {
+//   $(window).scroll(function () {
+//     setTimeout(function () {
+//       var scroll = $(window).scrollTop();
+//       if (scroll > lastScroll + 10) {
+//         $("#header").css({ top: "-90px" });
+//       } else if (scroll < lastScroll - 10) {
+//         if (mediaMin1024.matches) {
+//           $("#header").css({ top: "10px" });
+//         } else {
+//           $("#header").css({ top: "0" });
+//         }
+//       }
+//       lastScroll = scroll;
+//     });
+//   });
+// });
 
 // Open menu Mobile
 headerButtonMenu.addEventListener("click", () => {
