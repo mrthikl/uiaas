@@ -1,7 +1,7 @@
 footer {
   padding: 20px;
-  flex-direction: column;
-  text-align: center;
+  // flex-direction: column;
+  // text-align: center;
 
   .font__style--content02 {
     margin: 0;
@@ -36,8 +36,8 @@ footer {
   @media (min-width: 1440px) {
     width: 100%;
     padding: 80px 120px;
-    flex-direction: row;
-    justify-content: space-between !important;
+    // flex-direction: row;
+    // justify-content: space-between !important;
 
     p {
       margin: 0 !important;
