@@ -1,7 +1,7 @@
 .FAQ {
   width: 100%;
   max-width: unset;
-  padding: 80px 20px;
+  padding: 100px 20px;
   overflow: hidden;
   position: relative;
 
@@ -14,6 +14,10 @@
     height: 100%;
     background: url("../img/site_images/BG3.png") top / contain no-repeat;
     pointer-events: none;
+
+    @media (min-width: 2000px) {
+      background-size: cover;
+    }
   }
 
   .FAQ--inner {
@@ -119,6 +123,7 @@
   }
 
   @media (min-width: 1024px) {
+    padding: 200px 20px;
     .FAQ__content--headline {
       .font__style--headline {
         font-size: 64px;
